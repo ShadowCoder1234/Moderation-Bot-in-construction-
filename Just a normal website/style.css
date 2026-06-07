@@ -1,0 +1,204 @@
+
+
+.box {
+    width: 1000px;
+    height: 1000px;
+    border: 2px solid black;
+    border-radius: 23px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.main {
+    border: 2px solid transparent;
+    border-radius: 23px;
+    margin: 15px;
+    padding: 8px 20px;
+    font-size: 20px;
+    background-color: transparent;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.main:hover {
+    background-color: #ffffff;
+    opacity: 0.8;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+}
+
+
+.line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 170px;
+    width: 3px;
+    background-color: black;
+}
+
+
+.textarea-wrapper {
+    position: absolute;
+    bottom: 20px; 
+    left: 173px;  
+    right: 0;
+    display: flex;
+    justify-content: center;
+    left: 110px;
+    bottom: 30px;
+    display: flex;
+    gap: 10px;
+    
+}
+
+
+#textbox {
+    resize: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 75%;
+    height: 45px; 
+    padding: 8px 12px;
+    font-size: 16px;
+    outline: none;
+    
+
+    box-shadow: inset 2px 3px 5px rgba(0, 0, 0, 0.2); 
+    box-sizing: border-box; 
+}
+
+
+#textbox::placeholder {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #666;
+    opacity: 0.7; 
+}
+
+
+.message{
+     position: relative;
+     box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.6);
+     background-color: transparent;
+     border: 2px solid transparent;
+     border-radius: 50%;
+     margin-left: 5px;
+     cursor: pointer;
+     transition: all 1s ease;
+     font-weight: bold;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-size: 32px;
+
+    
+}
+
+
+.message:hover{
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.7);
+    background-color: #ffffff;
+    transition: all 2s ease-in-out;
+    transform: scale(1.08);
+}
+
+
+.box2{
+    width: 27vw;
+    height: 800px;
+    border: 2px solid rgba(0  , 0,  0, 0.7);
+    margin: 0 auto;
+    margin-right: 128px;
+    margin-top: 21px;
+    box-shadow: inset 2px 3px 15px rgba(0, 0, 0, 0.6);
+    border-radius: 7px;
+    
+}
+
+
+.message1{
+    margin: 47px;
+    display: flex;
+    font-size: 23px;
+    background-color: black;
+    opacity: 0.8;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 13px 13px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 54px;
+    align-items: center;
+    width:fit-content; max-width: 70%;
+    line-height: 1.5;
+    color: white;
+
+}
+
+
+.close{
+    display: flex;
+    position: absolute;
+    margin-top: 30px;
+    left: 20px;
+    border: 2px solid transparent;
+    font-size: 23px;
+    border-radius: 23px;
+    color: var(--text-color);
+    font-weight: bold;
+    background: var(--button-bg);
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    
+    
+}
+
+.hidden{
+    display: none;
+}
+
+.close:hover{
+    backdrop-filter: blur(10px);
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.7);
+    transition: all 1.3s ease;
+    transform: scale(1.04);
+
+}
+
+
+.darkMode{
+        position: absolute;
+    display: flex;
+    margin-top: 799px;
+    font-size: 23px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 34px;
+    padding: 12px 13px;
+    background: var(--button-bg);
+    border: 2px solid transparent;
+    cursor: pointer;
+    border-radius: 23px;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.6);
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+
+.dark{
+    background: var(--bg-color);
+    color: var(--text-color);
+
+}
+
+:root{
+    --bg-color: white;
+    --text-color: black;
+    --button-bg: #ffff;
+}

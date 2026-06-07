@@ -1,0 +1,15 @@
+{
+  "rates": {
+    "dollar": {
+      "rupee": 90,
+      "dirham": 3.67
+    },
+    "rupee": {
+      "dollar": 0.011111111111111112
+    },
+    "dirham": {
+      "dollar": 0.2724795640326976
+    }
+  },
+  "history": {}
+}
