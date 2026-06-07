@@ -1,5 +1,5 @@
 import re
-import torch
+
 def idk(text):
     bad_words = {
         "idiot": 20,
