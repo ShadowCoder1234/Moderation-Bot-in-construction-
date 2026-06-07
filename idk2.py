@@ -14,7 +14,7 @@ def moderation(text):
     text = re.sub(r'\d+', "", text)
     text = "".join(text.lower())
     text = text.lower()
-    text = text.split()
+    text = text.split() 
 
     for t in text:
         if t in bad_words:
