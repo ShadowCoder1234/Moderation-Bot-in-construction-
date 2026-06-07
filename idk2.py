@@ -1,6 +1,6 @@
 import re
 
-def idk(text):
+def moderation(text):
     bad_words = {
         "idiot": 20,
         "hacker": 50,
@@ -35,4 +35,4 @@ def idk(text):
 
 
 
-print(idk("What is this idiot doing"))
+print(moderation("What is this idiot doing"))
