@@ -37,4 +37,3 @@ def moderation(text):
 
 print(moderation("What is this idiot doing"))
 
-print("git main is working.")
