@@ -36,4 +36,4 @@ def idk(text):
 
 
 print(idk("What is this idiot doing"))
-
+print("Git is working")
