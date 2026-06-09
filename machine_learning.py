@@ -110,7 +110,7 @@ plt.show()
 
 print("\n--- Test Prediction ---")
 age_in = float(input("Age: ")) / MAX_AGE
-gen_in = float(input("Gender (1/2): ")) / 2.0
+gen_in = float(input("Gender (1(boy)/2(girl)): ")) / 2.0
 nut_in = float(input("Nutrition (1-10): ")) / 10.0
 
 model.eval()
