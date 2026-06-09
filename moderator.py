@@ -73,7 +73,7 @@ class ModeratorBot():
 
 bot = ModeratorBot(FILE)
 
-bot.add("stupid", 25)
+bot.add("stupid", 25)       
 
 result = bot.moderate("You are stuuuuuuupid and an idiot!!")
 
