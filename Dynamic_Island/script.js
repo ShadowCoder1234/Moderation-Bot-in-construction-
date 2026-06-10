@@ -2,6 +2,7 @@ const island = document.querySelector(".island")
  const music_button = document.querySelector(".musicButton")
  const FaceID_button = document.querySelector(".faceId")
  const CallButton = document.querySelector(".call")
+ const MusicUI = document.getElementsByClassName("musicUI")
 
 
  island.addEventListener("click", ()=>{
@@ -24,7 +25,7 @@ const island = document.querySelector(".island")
 
  music_button.addEventListener("click", ()=>{
     SetState("music")
- 
+   
     
  })
 
@@ -35,4 +36,5 @@ const island = document.querySelector(".island")
 
  CallButton.addEventListener("click", ()=>{
     SetState("call-state")
+
  })
