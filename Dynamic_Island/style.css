@@ -182,8 +182,9 @@ img{
 }
 
 .title{
-    font-size: 30px;
+    font-size: 27px;
     margin: 0;
+    animation: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
 
 
 }
@@ -191,6 +192,7 @@ img{
 .artist{
     color: gray;
     font-size: 20px;
+    animation: 0.4s cubic-bezier(0.3, 2, 0.35, 0.4);
 
 }
 
@@ -204,16 +206,53 @@ img{
 }
 
 .progress{
-    width: 300px;
-    height: 2px;
-    background-color: #dcdcdc;
-    opacity: 0;
+    width: 525px;
+    height: 15px;
+    background-color: white;
+    position: absolute;
+    margin: 5px;
+    margin-top: 90px;
+    margin-left: -280px;
+    border-radius: 23px;
+   
 }
 .controls{
-    margin: 0 auto;
+    margin: 12px;
     gap: 12px;
     display: flex;
-    opacity: 0;
+    position: absolute;
+    margin-left: -145px;
+    margin-top: 135px;
+    gap: 30px;
+    justify-content: center;
+
 
     
 }
+
+.btn1,.btn2,.btn3{
+    font-size: 40px;
+    border: transparent;
+    background: transparent;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timeStart{
+    display: flex;
+    position: absolute;
+    margin-top: 87px;
+    margin-left: -325px;
+}
+
+
+.timeEnd{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 88px;
+    margin-left: 255px;
+}
+
