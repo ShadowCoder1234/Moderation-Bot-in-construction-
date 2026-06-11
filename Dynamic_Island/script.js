@@ -6,7 +6,7 @@ const island = document.querySelector(".island")
 
 
  island.addEventListener("click", ()=>{
-    island.classList.toggle("expand")
+    SetState("expand")
  })
 
  function SetState(state){
@@ -16,7 +16,7 @@ const island = document.querySelector(".island")
         return;         
     }
 
-    island.classList.remove("music","call-state", "timer", "faceid")
+    island.classList.remove("music","call-state", "timer", "faceid", "expand")
     island.classList.add(state)
 
  }
