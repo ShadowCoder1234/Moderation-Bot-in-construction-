@@ -281,3 +281,21 @@ img{
     transition: height .1s linear;
 }  
 
+.faceID_UI,
+.finder{
+    opacity: 0;
+    transition: opacity .3s ease;
+    
+}
+
+.faceid .faceID_UI,
+.faceid .finder{
+    opacity: 1;
+}
+
+
+.finder{
+    height: 200px;
+    width: 200px;
+    
+}
