@@ -262,6 +262,7 @@ img{
     position: absolute;
     margin-left: 240px;
     margin-top: -45px;
+    height: 50px;
     
     align-items: flex-end;
 }
@@ -270,68 +271,13 @@ img{
 .visualiser span{
     height: 50px;
     background: #00ff41;
-    width: 6px;
+    width: 4px;
     border-radius: 999px;
-    animation: wave 0.8s infinite ease-out;
     filter: blur(.2px);
     opacity: .9;
+    gap: 2px;
     transform-origin: bottom;
     box-shadow: 0  0 2px #00ff41, 0 0 8px rgba(0, 225, 65, 0.5);
+    transition: height .1s linear;
 }  
 
-
-.visualiser span:nth-child(1){
-    animation-delay: 0.0s;
-    height: 12px;
-   
-}
-.visualiser span:nth-child(2){
-    animation-delay: 0.156s;
-    height: 18px;
-   
-}
-
-.visualiser span:nth-child(3){
-    animation-delay: 0.278s;
-    height: 40px;
-    
-}
-
-.visualiser span:nth-child(4){
-    animation-delay: 0.368s;
-    height: 49px;
-    
-}
-
-.visualiser span:nth-child(5){
-    animation-delay: 0.478s;
-    height: 34px;
-    
-}
-
-.visualiser span:nth-child(6){
-    animation-delay: 0.589s;
-    height: 23px;
-  
-}
-
-.visualiser span:nth-child(7){
-    animation-delay: 0.679s;
-    height: 20px;
-    
-}
-
-
-@keyframes wave{
-    0%{
-        transform: scaleY(.2);
-    }
-    25%{
-        transform: scaleY(.6);
-    }
-    50%{
-        transform: scaleY(1);
-    }
-
-    
-}

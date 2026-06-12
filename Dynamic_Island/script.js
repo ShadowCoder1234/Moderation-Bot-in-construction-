@@ -38,3 +38,28 @@ const island = document.querySelector(".island")
     SetState("call-state")
 
  })
+
+
+ const bars = document.querySelectorAll(".visualiser span")
+
+let heights = [12,16,22,30,38,44,38,30,22,16]
+
+let offset = 0;
+
+
+function animation(){
+   bars.forEach((bar, i)=>{
+      const h = 25 +
+            8 * Math.sin(offset + i * 0.4) +
+            6 * Math.sin(offset * 1.7 + i * 0.8) +
+            4 * Math.cos(offset * 2.3 + i * 0.2);
+
+      bar.style.height = `${Math.max(8,h)}px`
+
+   })
+   offset += 0.05
+
+   requestAnimationFrame(animation)
+}
+
+animation();
