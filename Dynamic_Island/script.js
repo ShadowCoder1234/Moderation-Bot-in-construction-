@@ -31,6 +31,7 @@ const island = document.querySelector(".island")
 
  FaceID_button.addEventListener("click",() =>{
     SetState("faceid")
+    checked()
     
  })
 
@@ -63,3 +64,53 @@ function animation(){
 }
 
 animation();
+
+
+
+
+
+
+const ring = document.querySelectorAll(".ring");
+const finder = document.querySelector(".finder");
+const tick = document.querySelector(".tick")
+
+function checked(){
+   ring.forEach(ring=>{
+       ring.classList.add("rotate");
+   })
+
+   
+
+    setTimeout(()=>{
+      ring.forEach(ring=>{
+         ring.style.opacity = "0"
+
+      })
+
+        
+        finder.style.opacity = "0";
+
+
+        tick.style.opacity = "1"
+
+
+    },1000);
+
+    setTimeout(()=>{ 
+
+        island.classList.remove("faceid");
+      ring.forEach(ring=>{
+         ring.classList.remove("rotate")
+        ring.style.opacity = "1";
+
+      })
+        finder.style.opacity = "1";
+
+        tick.style.opacity = "0"
+
+      
+     
+
+    },1700);
+
+}

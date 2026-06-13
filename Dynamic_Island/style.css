@@ -279,7 +279,13 @@ img{
     transform-origin: bottom;
     box-shadow: 0  0 2px #00ff41, 0 0 8px rgba(0, 225, 65, 0.5);
     transition: height .1s linear;
-}  
+} 
+
+
+
+.faceID_UI{
+    position: relative;
+}
 
 .faceID_UI,
 .finder{
@@ -290,12 +296,139 @@ img{
 
 .faceid .faceID_UI,
 .faceid .finder{
-    opacity: 1;
+    opacity: 1  ;
 }
 
 
 .finder{
     height: 200px;
     width: 200px;
+    transition: opacity .2s ease, transform .2s ease;
     
+   
+}
+
+
+.ring{
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    margin-top: 14px;
+    margin-left: 23px;
+    transition:  opacity .2s ease, transform .2s ease ;
+    animation: scan 1s  linear infinite; 
+    opacity: 1;
+   
+    
+
+}
+
+.ring span{
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border: 5px solid #fff;
+    
+
+   
+}
+
+.ring span:nth-child(1){
+    top: -10px;;
+    left:-15px;
+    border-right:none;
+    border-bottom:none;
+    border-radius:20px 0 0 0;
+    animation-delay: .1s;
+}
+
+.ring span:nth-child(2){
+    top:-10px;
+    right: -15px;;
+    border-left:none;
+    border-bottom:none;
+    border-radius:0 20px 0 0;
+    animation-delay: .2s;
+}
+
+.ring span:nth-child(3){
+    bottom:-15px;
+    left:-20px;
+    border-right:none;
+    border-top:none;
+    border-radius:0 0 0 20px;
+    animation-delay: .3s;
+}
+
+.ring span:nth-child(4){
+    bottom: -15px;
+    right:-20px;
+    border-left:none;
+    border-top:none;
+    border-radius:0 0 20px 0;
+    animation-delay: .4s;
+}
+
+.ring2{
+    animation-delay: .4s;
+    height: 160px;
+    width: 160px;
+    opacity: .75;
+    opacity: 1;
+    animation: invertedScan  linear 1s  infinite;
+}
+
+
+
+@keyframes scan{
+    from {
+        transform: rotate(0deg);
+      
+        
+    }
+
+    to{
+        transform: rotate(720deg);
+    }
+   
+}
+
+@keyframes invertedScan{
+    from {
+        transform: rotate(0deg);
+        
+    }
+    
+    to{
+        transform: rotate(-720deg);
+        
+    }
+   
+}
+
+.tick{
+    position:absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -109px;
+    margin-left: 90px;
+    font-size: 300px;
+
+
+    transform:translate(-50%,-50%) scale(.5);
+
+    color:white;
+
+
+    font-family:Arial,sans-serif;
+
+    opacity:0;
+
+    z-index:999;
+
+    transition:
+        opacity .2s ease,
+        transform .25s ease;
 }
