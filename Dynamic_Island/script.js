@@ -1,3 +1,4 @@
+// DYNAMIC ISLAND JS
 const island = document.querySelector(".island")
  const music_button = document.querySelector(".musicButton")
  const FaceID_button = document.querySelector(".faceId")
@@ -22,13 +23,13 @@ const island = document.querySelector(".island")
  }
 
 
-
+// MUSIC BUTTON
  music_button.addEventListener("click", ()=>{
     SetState("music")
    
     
  })
-
+// FACE ID BUTTON
  FaceID_button.addEventListener("click",() =>{
     SetState("faceid")
     checked()
@@ -46,7 +47,7 @@ const island = document.querySelector(".island")
 let heights = [12,16,22,30,38,44,38,30,22,16]
 
 let offset = 0;
-
+// FOR VISUALISER IN MUSIC UI
 
 function animation(){
    bars.forEach((bar, i)=>{
@@ -68,7 +69,7 @@ animation();
 
 
 
-
+// FACE ID LOGIC
 
 const ring = document.querySelectorAll(".ring");
 const finder = document.querySelector(".finder");
