@@ -4,6 +4,9 @@ This repository contains a collection of projects I've built while learning prog
 
 I enjoy creating interactive UIs, experimenting with AI, and exploring how software works behind the scenes.
 
+# Disclaimer
+This repository serves as my personal portfolio and learning archive. The projects included here were built to practice programming concepts, experiment with new technologies, and showcase my development journey. They will continue to evolve and improve over time as I gain more experience.
+
 ---
 
 ##  Projects
@@ -17,7 +20,6 @@ A concept inspired by modern smartphone interfaces.
 * Music UI
 * Face ID animation
 * Call UI
-* SVG animations
 * Pure HTML, CSS & JavaScript
 
 ---
@@ -43,6 +45,7 @@ Topics include:
 * Neural Networks
 * Regression
 * Deep Learning basics
+* PyTorch
 
 ---
 
@@ -55,10 +58,10 @@ Small front-end projects and animation concepts built with HTML, CSS, and JavaSc
 ##  Technologies
 
 * Python
-* HTML5
-* CSS3
+* HTML
+* CSS
 * JavaScript
-* Git & GitHub
+* Git
 
 ---
 
@@ -68,6 +71,7 @@ Small front-end projects and animation concepts built with HTML, CSS, and JavaSc
 * Backend Development
 * System Design
 * Advanced JavaScript
+* Pytorch and numpy
 
 ---
 
@@ -77,4 +81,4 @@ To continuously improve as a developer by building projects instead of only foll
 
 ---
 
-Thanks for visiting this repository!
+Feel free to explore the projects, and thanks for visiting!
